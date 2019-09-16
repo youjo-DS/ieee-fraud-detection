@@ -33,7 +33,7 @@ def feature(PREF, FNAME):
     return decorator
 
 def save_feature(df: pd.DataFrame, dataset:str, feature_id: str, col_name, with_csv_dump: bool=False):
-    path = f'../features/saved/{feature_id}__{dataset}__{col_name}.ftr'
+    path = f'../feature/{feature_id}__{dataset}__{col_name}.ftr'
     df.to_feather(path)
 
 
