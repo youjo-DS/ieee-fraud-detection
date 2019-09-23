@@ -52,7 +52,7 @@ te_cols_raw = test.columns
 # load feature
 # =============================================================================
 FEATURE_DIR = '../feature/'
-USE_FEATURE = ['f103', 'f201', 'f202', 'f203', 'f204', 'f205']
+USE_FEATURE = ['f103', 'f201', 'f202', 'f203', 'f204']
 if len(USE_FEATURE) > 0:
     tr_files = []
     te_files = []
