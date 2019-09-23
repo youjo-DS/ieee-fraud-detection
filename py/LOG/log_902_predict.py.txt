@@ -1,0 +1,15 @@
+
+#==============================================================================
+# START!!! 902_predict.py    PID: 18508    time: 2019-09-22 08:36:28.422249
+#==============================================================================
+
+Fold1
+[500]	training's auc: 0.999106	valid_1's auc: 0.899241
+[1000]	training's auc: 0.999998	valid_1's auc: 0.898801
+[1500]	training's auc: 1	valid_1's auc: 0.897414
+[2000]	training's auc: 1	valid_1's auc: 0.895961
+[2500]	training's auc: 1	valid_1's auc: 0.894741
+[3000]	training's auc: 1	valid_1's auc: 0.893521
+[3500]	training's auc: 1	valid_1's auc: 0.892618
+[4000]	training's auc: 1	valid_1's auc: 0.892011
+[4500]	training's auc: 1	valid_1's auc: 0.891236

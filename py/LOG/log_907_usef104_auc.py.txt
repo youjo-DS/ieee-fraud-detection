@@ -1,0 +1,61 @@
+
+#==============================================================================
+# START!!! 907_usef104_auc.py    PID: 22376    time: 2019-09-23 12:57:03.263988
+#==============================================================================
+
+
+using features:
+['TransactionAmt', 'ProductCD', 'card1', 'card2', 'card3', 'card4', 'card5', 'card6', 'addr1', 'addr2', 'dist1', 'P_emaildomain', 'R_emaildomain', 'C1', 'C2', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10', 'C11', 'C12', 'C13', 'C14', 'D1', 'D2', 'D3', 'D4', 'D5', 'D6', 'D8', 'D9', 'D10', 'D11', 'D12', 'D13', 'D14', 'D15', 'M2', 'M3', 'M4', 'M5', 'M6', 'M7', 'M8', 'M9', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V17', 'V19', 'V20', 'V29', 'V30', 'V33', 'V34', 'V35', 'V36', 'V37', 'V38', 'V40', 'V44', 'V45', 'V46', 'V47', 'V48', 'V49', 'V51', 'V52', 'V53', 'V54', 'V56', 'V58', 'V59', 'V60', 'V61', 'V62', 'V63', 'V64', 'V69', 'V70', 'V71', 'V72', 'V73', 'V74', 'V75', 'V76', 'V78', 'V80', 'V81', 'V82', 'V83', 'V84', 'V85', 'V87', 'V90', 'V91', 'V92', 'V93', 'V94', 'V95', 'V96', 'V97', 'V99', 'V100', 'V126', 'V127', 'V128', 'V130', 'V131', 'V138', 'V139', 'V140', 'V143', 'V145', 'V146', 'V147', 'V149', 'V150', 'V151', 'V152', 'V154', 'V156', 'V158', 'V159', 'V160', 'V161', 'V162', 'V163', 'V164', 'V165', 'V166', 'V167', 'V169', 'V170', 'V171', 'V172', 'V173', 'V175', 'V176', 'V177', 'V178', 'V180', 'V182', 'V184', 'V187', 'V188', 'V189', 'V195', 'V197', 'V200', 'V201', 'V202', 'V203', 'V204', 'V205', 'V206', 'V207', 'V208', 'V209', 'V210', 'V212', 'V213', 'V214', 'V215', 'V216', 'V217', 'V219', 'V220', 'V221', 'V222', 'V223', 'V224', 'V225', 'V226', 'V227', 'V228', 'V229', 'V231', 'V233', 'V234', 'V238', 'V239', 'V242', 'V243', 'V244', 'V245', 'V246', 'V247', 'V249', 'V251', 'V253', 'V256', 'V257', 'V258', 'V259', 'V261', 'V262', 'V263', 'V264', 'V265', 'V266', 'V267', 'V268', 'V270', 'V271', 'V272', 'V273', 'V274', 'V275', 'V276', 'V277', 'V278', 'V279', 'V280', 'V282', 'V283', 'V285', 'V287', 'V288', 'V289', 'V291', 'V292', 'V294', 'V303', 'V304', 'V306', 'V307', 'V308', 'V310', 'V312', 'V313', 'V314', 'V315', 'V317', 'V322', 'V323', 'V324', 'V326', 'V329', 'V331', 'V332', 'V333', 'V335', 'V336', 'V338', 'id_01', 'id_02', 'id_03', 'id_05', 'id_06', 'id_09', 'id_11', 'id_12', 'id_13', 'id_14', 'id_15', 'id_17', 'id_19', 'id_20', 'id_30', 'id_31', 'id_32', 'id_33', 'id_36', 'id_37', 'id_38', 'DeviceType', 'DeviceInfo', 'f201__DeviceInfo_CE', 'f201__DeviceType_CE', 'f201__M1_CE', 'f201__M2_CE', 'f201__M3_CE', 'f201__M4_CE', 'f201__M5_CE', 'f201__M6_CE', 'f201__M7_CE', 'f201__M8_CE', 'f201__M9_CE', 'f201__P_emaildomain_CE', 'f201__ProductCD_CE', 'f201__R_emaildomain_CE', 'f201__addr1_CE', 'f201__addr2_CE', 'f201__card4_CE', 'f201__card6_CE', 'f201__id_01_CE', 'f201__id_03_CE', 'f201__id_04_CE', 'f201__id_05_CE', 'f201__id_06_CE', 'f201__id_07_CE', 'f201__id_08_CE', 'f201__id_09_CE', 'f201__id_10_CE', 'f201__id_11_CE', 'f201__id_12_CE', 'f201__id_13_CE', 'f201__id_14_CE', 'f201__id_15_CE', 'f201__id_16_CE', 'f201__id_17_CE', 'f201__id_18_CE', 'f201__id_19_CE', 'f201__id_20_CE', 'f201__id_21_CE', 'f201__id_22_CE', 'f201__id_23_CE', 'f201__id_24_CE', 'f201__id_25_CE', 'f201__id_26_CE', 'f201__id_27_CE', 'f201__id_28_CE', 'f201__id_29_CE', 'f201__id_30_CE', 'f201__id_31_CE', 'f201__id_32_CE', 'f201__id_33_CE', 'f201__id_34_CE', 'f201__id_35_CE', 'f201__id_36_CE', 'f201__id_37_CE', 'f201__id_38_CE']
+
+Fold1
+Training until validation scores don't improve for 500 rounds.
+[500]	training's auc: 0.992866	valid_1's auc: 0.897829
+[1000]	training's auc: 0.998885	valid_1's auc: 0.900536
+[1500]	training's auc: 0.999804	valid_1's auc: 0.899533
+Early stopping, best iteration is:
+[1142]	training's auc: 0.999337	valid_1's auc: 0.900835
+	 AUC =  0.9008345171143213
+Fold 1 finished in 0:01:54.484401
+Fold2
+Training until validation scores don't improve for 500 rounds.
+[500]	training's auc: 0.990182	valid_1's auc: 0.917584
+[1000]	training's auc: 0.998237	valid_1's auc: 0.920462
+Early stopping, best iteration is:
+[905]	training's auc: 0.997497	valid_1's auc: 0.920571
+	 AUC =  0.9205712696552247
+Fold 2 finished in 0:02:42.442139
+Fold3
+Training until validation scores don't improve for 500 rounds.
+[500]	training's auc: 0.982487	valid_1's auc: 0.907353
+[1000]	training's auc: 0.995335	valid_1's auc: 0.913883
+[1500]	training's auc: 0.998611	valid_1's auc: 0.912667
+Early stopping, best iteration is:
+[1102]	training's auc: 0.996411	valid_1's auc: 0.914197
+	 AUC =  0.9141967681485709
+Fold 3 finished in 0:03:58.206665
+Fold4
+Training until validation scores don't improve for 500 rounds.
+[500]	training's auc: 0.975493	valid_1's auc: 0.918806
+[1000]	training's auc: 0.991679	valid_1's auc: 0.928098
+[1500]	training's auc: 0.99667	valid_1's auc: 0.929521
+Early stopping, best iteration is:
+[1450]	training's auc: 0.996382	valid_1's auc: 0.929671
+	 AUC =  0.9296710421862928
+Fold 4 finished in 0:05:54.526889
+Fold5
+Training until validation scores don't improve for 500 rounds.
+[500]	training's auc: 0.972417	valid_1's auc: 0.916538
+[1000]	training's auc: 0.989481	valid_1's auc: 0.925379
+[1500]	training's auc: 0.99533	valid_1's auc: 0.927063
+[2000]	training's auc: 0.997794	valid_1's auc: 0.926848
+Early stopping, best iteration is:
+[1729]	training's auc: 0.996673	valid_1's auc: 0.927364
+	 AUC =  0.9273642481287724
+Fold 5 finished in 0:08:02.106115
+Mean AUC: 0.918527569, std: 0.010375360, All_AUC: 0.828424747
+
+#==============================================================================
+# SUCCESS !!! 907_usef104_auc.py
+#==============================================================================
+
+time: 23.42min

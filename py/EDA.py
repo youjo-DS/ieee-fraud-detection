@@ -9,7 +9,7 @@ from copy import copy
 # ==========================================================================
 # display
 # ==========================================================================
-def max_disp(df, rows=False, cols=False):
+def max_disp(df, rows=False, cols=True):
     if rows:
         pd.set_option('display.max_rows', None)
     if cols:
@@ -224,4 +224,19 @@ def category_target_percentile(train, categorical_features, target_column, perce
         ).plot(kind='bar', stacked=True, figsize=figsize)
         plt.show()
 
+    return
+
+def kde_train_vs_target(train, columns, target):
+    if isinstance(columns, str):
+        columns = [columns]
+        
+    t0 = train[train[target] == 0]
+    t1 = train[train[target] == 1]
+    for c in columns:
+        print(c)
+        plt.figure(figsize=(16, 5))
+        sns.kdeplot(t0[c], shade=True)
+        sns.kdeplot(t1[c], shade=True)
+        plt.show()
+        
     return

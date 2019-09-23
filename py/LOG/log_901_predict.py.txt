@@ -1,0 +1,112 @@
+
+#==============================================================================
+# START!!! 901_predict.py    PID: 16453    time: 2019-09-21 20:50:16.307199
+#==============================================================================
+
+Fold1
+Training until validation scores don't improve for 500 rounds.
+[500]	training's binary_logloss: 0.0550417	valid_1's binary_logloss: 0.0683687
+[1000]	training's binary_logloss: 0.0368937	valid_1's binary_logloss: 0.055369
+[1500]	training's binary_logloss: 0.0281611	valid_1's binary_logloss: 0.0498897
+[2000]	training's binary_logloss: 0.0227106	valid_1's binary_logloss: 0.0467841
+[2500]	training's binary_logloss: 0.01897	valid_1's binary_logloss: 0.0448753
+[3000]	training's binary_logloss: 0.0160427	valid_1's binary_logloss: 0.0434765
+[3500]	training's binary_logloss: 0.0137321	valid_1's binary_logloss: 0.0424834
+[4000]	training's binary_logloss: 0.0118794	valid_1's binary_logloss: 0.0417915
+[4500]	training's binary_logloss: 0.0104325	valid_1's binary_logloss: 0.0413208
+[5000]	training's binary_logloss: 0.00919975	valid_1's binary_logloss: 0.0410158
+[5500]	training's binary_logloss: 0.00810182	valid_1's binary_logloss: 0.0407729
+[6000]	training's binary_logloss: 0.00727605	valid_1's binary_logloss: 0.0406487
+[6500]	training's binary_logloss: 0.00645401	valid_1's binary_logloss: 0.0406175
+[7000]	training's binary_logloss: 0.0057357	valid_1's binary_logloss: 0.0406318
+Early stopping, best iteration is:
+[6599]	training's binary_logloss: 0.00628489	valid_1's binary_logloss: 0.0406052
+	 AUC =  0.9785619628030578
+Fold2
+Training until validation scores don't improve for 500 rounds.
+[500]	training's binary_logloss: 0.0550213	valid_1's binary_logloss: 0.0678796
+[1000]	training's binary_logloss: 0.0368511	valid_1's binary_logloss: 0.0549537
+[1500]	training's binary_logloss: 0.028151	valid_1's binary_logloss: 0.0495372
+[2000]	training's binary_logloss: 0.0227431	valid_1's binary_logloss: 0.0464756
+[2500]	training's binary_logloss: 0.0189667	valid_1's binary_logloss: 0.0445873
+[3000]	training's binary_logloss: 0.0161872	valid_1's binary_logloss: 0.0432611
+[3500]	training's binary_logloss: 0.0138859	valid_1's binary_logloss: 0.0422457
+[4000]	training's binary_logloss: 0.0119903	valid_1's binary_logloss: 0.041517
+[4500]	training's binary_logloss: 0.0104838	valid_1's binary_logloss: 0.0410136
+[5000]	training's binary_logloss: 0.00923448	valid_1's binary_logloss: 0.0406545
+[5500]	training's binary_logloss: 0.0081674	valid_1's binary_logloss: 0.0403916
+[6000]	training's binary_logloss: 0.00733339	valid_1's binary_logloss: 0.0402425
+[6500]	training's binary_logloss: 0.00656587	valid_1's binary_logloss: 0.0401437
+[7000]	training's binary_logloss: 0.00585827	valid_1's binary_logloss: 0.0400886
+[7500]	training's binary_logloss: 0.00527148	valid_1's binary_logloss: 0.0400916
+Early stopping, best iteration is:
+[7182]	training's binary_logloss: 0.00564095	valid_1's binary_logloss: 0.0400829
+	 AUC =  0.9789529149157536
+Fold3
+Training until validation scores don't improve for 500 rounds.
+[500]	training's binary_logloss: 0.0550469	valid_1's binary_logloss: 0.0682262
+[1000]	training's binary_logloss: 0.0368761	valid_1's binary_logloss: 0.0552561
+[1500]	training's binary_logloss: 0.0281739	valid_1's binary_logloss: 0.0498296
+[2000]	training's binary_logloss: 0.0228863	valid_1's binary_logloss: 0.0467543
+[2500]	training's binary_logloss: 0.0192655	valid_1's binary_logloss: 0.0448519
+[3000]	training's binary_logloss: 0.0163088	valid_1's binary_logloss: 0.0434038
+[3500]	training's binary_logloss: 0.0139533	valid_1's binary_logloss: 0.0423433
+[4000]	training's binary_logloss: 0.0119726	valid_1's binary_logloss: 0.0415761
+[4500]	training's binary_logloss: 0.0105574	valid_1's binary_logloss: 0.0410756
+[5000]	training's binary_logloss: 0.00928508	valid_1's binary_logloss: 0.0407105
+[5500]	training's binary_logloss: 0.00821192	valid_1's binary_logloss: 0.0404495
+[6000]	training's binary_logloss: 0.00738308	valid_1's binary_logloss: 0.040286
+[6500]	training's binary_logloss: 0.00659611	valid_1's binary_logloss: 0.0401759
+[7000]	training's binary_logloss: 0.00583821	valid_1's binary_logloss: 0.0401197
+[7500]	training's binary_logloss: 0.0052523	valid_1's binary_logloss: 0.0401027
+[8000]	training's binary_logloss: 0.0047573	valid_1's binary_logloss: 0.0401411
+Early stopping, best iteration is:
+[7505]	training's binary_logloss: 0.00524746	valid_1's binary_logloss: 0.0401015
+	 AUC =  0.9790566939458231
+Fold4
+Training until validation scores don't improve for 500 rounds.
+[500]	training's binary_logloss: 0.0550747	valid_1's binary_logloss: 0.0691641
+[1000]	training's binary_logloss: 0.0368618	valid_1's binary_logloss: 0.0561727
+[1500]	training's binary_logloss: 0.0281159	valid_1's binary_logloss: 0.0507035
+[2000]	training's binary_logloss: 0.0226875	valid_1's binary_logloss: 0.0476416
+[2500]	training's binary_logloss: 0.0190472	valid_1's binary_logloss: 0.0457452
+[3000]	training's binary_logloss: 0.0161921	valid_1's binary_logloss: 0.0443547
+[3500]	training's binary_logloss: 0.0139878	valid_1's binary_logloss: 0.0433704
+[4000]	training's binary_logloss: 0.0121239	valid_1's binary_logloss: 0.0426728
+[4500]	training's binary_logloss: 0.0106617	valid_1's binary_logloss: 0.0421633
+[5000]	training's binary_logloss: 0.00940743	valid_1's binary_logloss: 0.0418055
+[5500]	training's binary_logloss: 0.00834733	valid_1's binary_logloss: 0.0415537
+[6000]	training's binary_logloss: 0.00744772	valid_1's binary_logloss: 0.0413773
+[6500]	training's binary_logloss: 0.00662915	valid_1's binary_logloss: 0.0412636
+[7000]	training's binary_logloss: 0.00589884	valid_1's binary_logloss: 0.0412204
+[7500]	training's binary_logloss: 0.00530715	valid_1's binary_logloss: 0.0412211
+Early stopping, best iteration is:
+[7344]	training's binary_logloss: 0.0054971	valid_1's binary_logloss: 0.0412103
+	 AUC =  0.9783543481856787
+Fold5
+Training until validation scores don't improve for 500 rounds.
+[500]	training's binary_logloss: 0.0552463	valid_1's binary_logloss: 0.0670306
+[1000]	training's binary_logloss: 0.0369894	valid_1's binary_logloss: 0.0543285
+[1500]	training's binary_logloss: 0.0282007	valid_1's binary_logloss: 0.049019
+[2000]	training's binary_logloss: 0.0227866	valid_1's binary_logloss: 0.0460592
+[2500]	training's binary_logloss: 0.0190719	valid_1's binary_logloss: 0.0442438
+[3000]	training's binary_logloss: 0.0162293	valid_1's binary_logloss: 0.042952
+[3500]	training's binary_logloss: 0.0139237	valid_1's binary_logloss: 0.041994
+[4000]	training's binary_logloss: 0.0120058	valid_1's binary_logloss: 0.0412942
+[4500]	training's binary_logloss: 0.0105549	valid_1's binary_logloss: 0.0408358
+[5000]	training's binary_logloss: 0.00934884	valid_1's binary_logloss: 0.0405015
+[5500]	training's binary_logloss: 0.00828563	valid_1's binary_logloss: 0.0402732
+[6000]	training's binary_logloss: 0.0074142	valid_1's binary_logloss: 0.040127
+[6500]	training's binary_logloss: 0.00659302	valid_1's binary_logloss: 0.0400516
+[7000]	training's binary_logloss: 0.00585942	valid_1's binary_logloss: 0.0400215
+[7500]	training's binary_logloss: 0.00526747	valid_1's binary_logloss: 0.0400437
+Early stopping, best iteration is:
+[7064]	training's binary_logloss: 0.00578874	valid_1's binary_logloss: 0.0400178
+	 AUC =  0.9784623396335068
+Mean AUC: 0.978677652, std: 0.000277024, All_AUC: 0.978663620
+
+#==============================================================================
+# SUCCESS !!! 901_predict.py
+#==============================================================================
+
+time: 118.18min

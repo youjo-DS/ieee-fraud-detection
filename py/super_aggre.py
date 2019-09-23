@@ -4,7 +4,7 @@ import numpy as np
 from collections import OrderedDict
 
 # 連続値から代表値を取得する
-def auto_agg(data: pd.DataFrame, group, agg_cols, agg_funcs, orig=None, prefix='', suffix='', how='left', drop=False):
+def auto_agg(data: pd.DataFrame, group, agg_cols, agg_funcs, orig=None, prefix='', suffix='', how='left', drop=False, as_index=True):
     """
     諸々を指定すると、集計・カラムのリネームを行い、最終結合用のDataFrameを返す。
     -------
@@ -25,7 +25,7 @@ def auto_agg(data: pd.DataFrame, group, agg_cols, agg_funcs, orig=None, prefix='
    
     # dic = {col:agg_funcs for col in agg_cols} # make aggregation dictionary
     dic = OrderedDict(([[col, agg_funcs] for col in agg_cols]))
-    agg_df = data.groupby(group).agg(dic)
+    agg_df = data.groupby(group, as_index=as_index).agg(dic)
 
     # make rename column list    
     col_names = [f'{prefix}{key}_{value}{suffix}' for key in dic for value in dic[key]]                

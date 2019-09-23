@@ -1,6 +1,8 @@
 import os
+import requests
 import warnings
 warnings.filterwarnings("ignore")
+
 import pandas as pd
 import numpy as np
 
@@ -54,8 +56,17 @@ def end(fname):
 #==============================================================================
 """)
     print(f'time: {elapsed_minute():.2f}min')
-    # send_line(f'{HOSTNAME}  FINISH {fname}  time: {elapsed_minute():.2f}min')
+    send_line(f'{HOSTNAME}  FINISH {fname}  time: {elapsed_minute():.2f}min')
     return
+
+def send_line(message):
+    
+    line_notify_token = 'W7AWtVJn1EBQ8yTNBhlVvIh8ADZs3FQF25Mj1LG17Tc'
+    line_notify_api = 'https://notify-api.line.me/api/notify'
+    
+    payload = {'message': message}
+    headers = {'Authorization': 'Bearer ' + line_notify_token}
+    requests.post(line_notify_api, data=payload, headers=headers)
 
 def reduce_mem_usage(df, verbose=True):
     numerics = ['int16', 'int32', 'int64', 'float16', 'float32', 'float64']
