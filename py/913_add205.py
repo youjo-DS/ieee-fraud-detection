@@ -48,6 +48,9 @@ train.sort_values('TransactionDT', inplace=True)
 tr_cols_raw = train.columns
 te_cols_raw = test.columns
 
+len_tr = len(train)
+len_te = len(test)
+
 # =============================================================================
 # load feature
 # =============================================================================
@@ -57,20 +60,23 @@ if len(USE_FEATURE) > 0:
     tr_files = []
     te_files = []
     for f in USE_FEATURE:
-        tr_file   = glob(f'../feature/{f}*tr*.ftr')
+        tr_file   = glob(f'../feature/{f}*__train__*.ftr')
         tr_files += tr_file
 
-        te_file   = glob(f'../feature/{f}*te*.ftr')
+        te_file   = glob(f'../feature/{f}*__test__*.ftr')
         te_files += te_file
 else:
-    tr_feature_path = '../feature/*tr*.ftr'
-    te_feature_path = '../feature/*te*.ftr'
+    tr_feature_path = '../feature/*__train__*.ftr'
+    te_feature_path = '../feature/*__test__*.ftr'
 
     tr_files = sorted(glob(tr_feature_path))
     te_files = sorted(glob(te_feature_path))
 
 train = pd.concat([train, *[feather.read_dataframe(f) for f in tr_files]], axis=1)
 test  = pd.concat([test, *[feather.read_dataframe(f) for f in te_files]], axis=1)
+
+assert len(train) == len_tr
+assert len(test) == len_te
 
 added_columns = [col for col in train.columns if not col in tr_cols_raw]
 

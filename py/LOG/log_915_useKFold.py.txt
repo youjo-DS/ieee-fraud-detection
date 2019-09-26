@@ -1,0 +1,38 @@
+
+#==============================================================================
+# START!!! 915_useKFold.py    PID: 30979    time: 2019-09-24 23:59:40.451344
+#==============================================================================
+
+
+using features:
+['TransactionAmt', 'ProductCD', 'card1', 'card2', 'card3', 'card4', 'card5', 'card6', 'addr1', 'addr2', 'dist1', 'P_emaildomain', 'R_emaildomain', 'C1', 'C2', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10', 'C11', 'C12', 'C13', 'C14', 'D1', 'D2', 'D3', 'D4', 'D5', 'D6', 'D8', 'D9', 'D10', 'D11', 'D12', 'D13', 'D14', 'D15', 'M2', 'M3', 'M4', 'M5', 'M6', 'M7', 'M8', 'M9', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V17', 'V19', 'V20', 'V29', 'V30', 'V33', 'V34', 'V35', 'V36', 'V37', 'V38', 'V40', 'V44', 'V45', 'V46', 'V47', 'V48', 'V49', 'V51', 'V52', 'V53', 'V54', 'V56', 'V58', 'V59', 'V60', 'V61', 'V62', 'V63', 'V64', 'V69', 'V70', 'V71', 'V72', 'V73', 'V74', 'V75', 'V76', 'V78', 'V80', 'V81', 'V82', 'V83', 'V84', 'V85', 'V87', 'V90', 'V91', 'V92', 'V93', 'V94', 'V95', 'V96', 'V97', 'V99', 'V100', 'V126', 'V127', 'V128', 'V130', 'V131', 'V138', 'V139', 'V140', 'V143', 'V145', 'V146', 'V147', 'V149', 'V150', 'V151', 'V152', 'V154', 'V156', 'V158', 'V159', 'V160', 'V161', 'V162', 'V163', 'V164', 'V165', 'V166', 'V167', 'V169', 'V170', 'V171', 'V172', 'V173', 'V175', 'V176', 'V177', 'V178', 'V180', 'V182', 'V184', 'V187', 'V188', 'V189', 'V195', 'V197', 'V200', 'V201', 'V202', 'V203', 'V204', 'V205', 'V206', 'V207', 'V208', 'V209', 'V210', 'V212', 'V213', 'V214', 'V215', 'V216', 'V217', 'V219', 'V220', 'V221', 'V222', 'V223', 'V224', 'V225', 'V226', 'V227', 'V228', 'V229', 'V231', 'V233', 'V234', 'V238', 'V239', 'V242', 'V243', 'V244', 'V245', 'V246', 'V247', 'V249', 'V251', 'V253', 'V256', 'V257', 'V258', 'V259', 'V261', 'V262', 'V263', 'V264', 'V265', 'V266', 'V267', 'V268', 'V270', 'V271', 'V272', 'V273', 'V274', 'V275', 'V276', 'V277', 'V278', 'V279', 'V280', 'V282', 'V283', 'V285', 'V287', 'V288', 'V289', 'V291', 'V292', 'V294', 'V303', 'V304', 'V306', 'V307', 'V308', 'V310', 'V312', 'V313', 'V314', 'V315', 'V317', 'V322', 'V323', 'V324', 'V326', 'V329', 'V331', 'V332', 'V333', 'V335', 'V336', 'V338', 'id_01', 'id_02', 'id_03', 'id_05', 'id_06', 'id_09', 'id_11', 'id_12', 'id_13', 'id_14', 'id_15', 'id_17', 'id_19', 'id_20', 'id_30', 'id_31', 'id_32', 'id_33', 'id_36', 'id_37', 'id_38', 'DeviceType', 'DeviceInfo', 'f103__TransactionAmt_decimal', 'f103__card1_count_full', 'f103__Transaction_day_of_week', 'f103__Transaction_hour', 'f103__id_02__id_20', 'f103__id_02__D8', 'f103__D11__DeviceInfo', 'f103__DeviceInfo__P_emaildomain', 'f103__P_emaildomain__C2', 'f103__card2__dist1', 'f103__card1__card5', 'f103__card2__id_20', 'f103__card5__P_emaildomain', 'f103__addr1__card1', 'id_34_count_full', 'id_36_count_full', 'id_01_count_dist', 'id_31_count_dist', 'id_33_count_dist', 'id_35_count_dist', 'id_36_count_dist', 'f201__ProductCD_CE', 'f201__card2_CE', 'f201__card3_CE', 'f201__card4_CE', 'f201__card5_CE', 'f201__card6_CE', 'f201__addr1_CE', 'f201__addr2_CE', 'f201__P_emaildomain_CE', 'f201__R_emaildomain_CE', 'f201__M1_CE', 'f201__M2_CE', 'f201__M3_CE', 'f201__M4_CE', 'f201__M5_CE', 'f201__M6_CE', 'f201__M7_CE', 'f201__M8_CE', 'f201__M9_CE', 'f201__DeviceType_CE', 'f201__DeviceInfo_CE', 'f201__id_12_CE', 'f201__id_13_CE', 'f201__id_14_CE', 'f201__id_15_CE', 'f201__id_16_CE', 'f201__id_17_CE', 'f201__id_18_CE', 'f201__id_19_CE', 'f201__id_20_CE', 'f201__id_21_CE', 'f201__id_22_CE', 'f201__id_23_CE', 'f201__id_24_CE', 'f201__id_25_CE', 'f201__id_26_CE', 'f201__id_27_CE', 'f201__id_28_CE', 'f201__id_29_CE', 'f201__id_30_CE', 'f201__id_31_CE', 'f201__id_32_CE', 'f201__id_33_CE', 'f201__id_35_CE', 'f201__id_37_CE', 'f201__id_38_CE', 'f202__TransactionAmt_decimal', 'f202__card1_count_full', 'f202__Transaction_day_of_week', 'f202__Transaction_hour', 'f202__year', 'f202__month', 'f202__dow', 'f202__quarter', 'f202__hour', 'f202__day', 'f202__all_group_nan_sum', 'f202__all_group_0_count', 'f202__date_block', 'f203__date_block_num', 'f203__TransactionAmt_min__lag0', 'f203__TransactionAmt_mean__lag0', 'f203__TransactionAmt_max__lag0', 'f203__TransactionAmt_std__lag0', 'f203__dist1_min__lag0', 'f203__dist1_mean__lag0', 'f203__dist1_max__lag0', 'f203__dist1_std__lag0', 'f203__dist2_min__lag0', 'f203__dist2_mean__lag0', 'f203__dist2_max__lag0', 'f203__dist2_std__lag0', 'f203__TransactionAmt_min__lag1', 'f203__TransactionAmt_mean__lag1', 'f203__TransactionAmt_max__lag1', 'f203__TransactionAmt_std__lag1', 'f203__dist1_min__lag1', 'f203__dist1_mean__lag1', 'f203__dist1_max__lag1', 'f203__dist1_std__lag1', 'f203__dist2_min__lag1', 'f203__dist2_mean__lag1', 'f203__dist2_max__lag1', 'f203__dist2_std__lag1', 'f203__TransactionAmt_min__lag2', 'f203__TransactionAmt_mean__lag2', 'f203__TransactionAmt_max__lag2', 'f203__TransactionAmt_std__lag2', 'f203__dist1_min__lag2', 'f203__dist1_mean__lag2', 'f203__dist1_max__lag2', 'f203__dist1_std__lag2', 'f203__dist2_min__lag2', 'f203__dist2_mean__lag2', 'f203__dist2_max__lag2', 'f203__dist2_std__lag2', 'f203__TransactionAmt_min__lag3', 'f203__TransactionAmt_mean__lag3', 'f203__TransactionAmt_max__lag3', 'f203__TransactionAmt_std__lag3', 'f203__dist1_min__lag3', 'f203__dist1_mean__lag3', 'f203__dist1_max__lag3', 'f203__dist1_std__lag3', 'f203__dist2_min__lag3', 'f203__dist2_mean__lag3', 'f203__dist2_max__lag3', 'f203__dist2_std__lag3', 'f203__TransactionAmt_min__lag6', 'f203__TransactionAmt_mean__lag6', 'f203__TransactionAmt_max__lag6', 'f203__TransactionAmt_std__lag6', 'f203__dist1_min__lag6', 'f203__dist1_mean__lag6', 'f203__dist1_max__lag6', 'f203__dist1_std__lag6', 'f203__dist2_min__lag6', 'f203__dist2_mean__lag6', 'f203__dist2_max__lag6', 'f203__dist2_std__lag6', 'f204__card1_counts__lag0', 'f204__card1_counts__lag1', 'f204__card1_counts__lag2', 'f204__card1_counts__lag3', 'f204__card1_counts__lag6', 'f205__motnthly_count', 'f205__daily_count']
+
+Fold1
+[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=0.7 will be ignored. Current value: bagging_fraction=0.7
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.963586	valid_1's auc: 0.945055
+[1000]	training's auc: 0.982329	valid_1's auc: 0.959384
+[1500]	training's auc: 0.99061	valid_1's auc: 0.965879
+[2000]	training's auc: 0.994954	valid_1's auc: 0.969248
+[2500]	training's auc: 0.997274	valid_1's auc: 0.971316
+[3000]	training's auc: 0.998582	valid_1's auc: 0.97268
+[3500]	training's auc: 0.99929	valid_1's auc: 0.973613
+[4000]	training's auc: 0.999657	valid_1's auc: 0.974309
+[4500]	training's auc: 0.999845	valid_1's auc: 0.974831
+[5000]	training's auc: 0.999935	valid_1's auc: 0.975321
+[5500]	training's auc: 0.999975	valid_1's auc: 0.975595
+[6000]	training's auc: 0.999991	valid_1's auc: 0.975851
+[6500]	training's auc: 0.999997	valid_1's auc: 0.976082
+[7000]	training's auc: 0.999999	valid_1's auc: 0.976252
+[7500]	training's auc: 1	valid_1's auc: 0.976356
+[8000]	training's auc: 1	valid_1's auc: 0.976477
+Early stopping, best iteration is:
+[8079]	training's auc: 1	valid_1's auc: 0.976497
+	 AUC =  0.9764975589850425
+Fold 1 finished in 0:30:04.389981
+Fold2
+[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=0.7 will be ignored. Current value: bagging_fraction=0.7
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.963643	valid_1's auc: 0.943096
+[1000]	training's auc: 0.982144	valid_1's auc: 0.958631
+[1500]	training's auc: 0.990506	valid_1's auc: 0.965467

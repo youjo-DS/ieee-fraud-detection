@@ -1,0 +1,15 @@
+
+#==============================================================================
+# START!!! 919_kernel_base.py    PID: 38144    time: 2019-09-26 22:03:40.825608
+#==============================================================================
+
+Shape control: (590540, 791) (506691, 791)
+Fold1
+train records: 516722
+valid records: 73818
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.973022	valid_1's auc: 0.953352
+[1000]	training's auc: 0.992893	valid_1's auc: 0.969796
+[1500]	training's auc: 0.998316	valid_1's auc: 0.9747
+Did not meet early stopping. Best iteration is:
+[1800]	training's auc: 0.999346	valid_1's auc: 0.97621

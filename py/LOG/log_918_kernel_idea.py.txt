@@ -1,0 +1,80 @@
+
+#==============================================================================
+# START!!! 918_kernel_idea.py    PID: 36335    time: 2019-09-26 08:20:29.727368
+#==============================================================================
+
+Encoding card4
+{'visa': 719649, 'mastercard': 347386, 'american express': 16009, 'discover': 9524}
+Encoding card6
+{'debit': 824959, 'credit': 267648, 'debit or credit': 30, 'charge card': 16}
+Encoding ProductCD
+{'W': 800657, 'C': 137785, 'R': 73346, 'H': 62397, 'S': 23046}
+Encoding M4
+{'M0': 357789, 'M2': 122947, 'M1': 97306}
+Fold1
+train records: 398490
+valid records: 92427
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.962309	valid_1's auc: 0.916634
+[1000]	training's auc: 0.985969	valid_1's auc: 0.93048
+[1500]	training's auc: 0.994172	valid_1's auc: 0.934088
+[2000]	training's auc: 0.997466	valid_1's auc: 0.934834
+Early stopping, best iteration is:
+[2017]	training's auc: 0.99754	valid_1's auc: 0.934872
+	 AUC =  0.9348723465493585
+Fold 1 finished in 0:11:40.939455
+Fold2
+train records: 398490
+valid records: 92427
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.961781	valid_1's auc: 0.914448
+[1000]	training's auc: 0.985647	valid_1's auc: 0.928902
+[1500]	training's auc: 0.993919	valid_1's auc: 0.9323
+[2000]	training's auc: 0.997271	valid_1's auc: 0.93289
+Early stopping, best iteration is:
+[1903]	training's auc: 0.996806	valid_1's auc: 0.932953
+	 AUC =  0.9329526940090569
+Fold 2 finished in 0:10:51.760895
+Fold3
+train records: 398490
+valid records: 92427
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.96226	valid_1's auc: 0.915494
+[1000]	training's auc: 0.985994	valid_1's auc: 0.929636
+[1500]	training's auc: 0.994091	valid_1's auc: 0.933005
+[2000]	training's auc: 0.997371	valid_1's auc: 0.933986
+Early stopping, best iteration is:
+[2044]	training's auc: 0.997561	valid_1's auc: 0.934045
+	 AUC =  0.9340446630175623
+Fold 3 finished in 0:11:44.347364
+Fold4
+train records: 398491
+valid records: 92427
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.962097	valid_1's auc: 0.915585
+[1000]	training's auc: 0.986046	valid_1's auc: 0.929391
+[1500]	training's auc: 0.994226	valid_1's auc: 0.932853
+[2000]	training's auc: 0.997467	valid_1's auc: 0.933682
+Early stopping, best iteration is:
+[2076]	training's auc: 0.99776	valid_1's auc: 0.933806
+	 AUC =  0.9338056841416245
+Fold 4 finished in 0:11:45.384065
+Fold5
+train records: 398491
+valid records: 92427
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.962424	valid_1's auc: 0.915551
+[1000]	training's auc: 0.986056	valid_1's auc: 0.930027
+[1500]	training's auc: 0.994193	valid_1's auc: 0.933894
+[2000]	training's auc: 0.997506	valid_1's auc: 0.934769
+Early stopping, best iteration is:
+[2052]	training's auc: 0.997718	valid_1's auc: 0.934936
+	 AUC =  0.9349364224159661
+Fold 5 finished in 0:11:39.908379
+Mean AUC: 0.934122362, std: 0.000734795, All_AUC: 0.950779411
+
+#==============================================================================
+# SUCCESS !!! 918_kernel_idea.py
+#==============================================================================
+
+time: 58.43min
