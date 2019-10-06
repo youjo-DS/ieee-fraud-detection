@@ -6,8 +6,11 @@ output/
 data/
 external/
 *.ipynb_checkpoints
+py/model/
 py/*.model
 py/*.p
 py/__pycache__/*
 py/~.xls*
 .vscode
+*.pkl
+*.zip

@@ -1,0 +1,100 @@
+
+#==============================================================================
+# START!!! 932_from923_KFold.py    PID: 57557    time: 2019-10-01 00:50:35.318001
+#==============================================================================
+
+Shape control: (590540, 791) (506691, 791)
+Mem. usage decreased to 1951.98 Mb (11.7% reduction)
+Mem. usage decreased to 1672.98 Mb (12.1% reduction)
+Fold1
+train records: 472432
+valid records: 118108
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.974635	valid_1's auc: 0.952954
+[1000]	training's auc: 0.994042	valid_1's auc: 0.968452
+[1500]	training's auc: 0.998783	valid_1's auc: 0.973441
+[2000]	training's auc: 0.999791	valid_1's auc: 0.975715
+[2500]	training's auc: 0.999973	valid_1's auc: 0.976844
+[3000]	training's auc: 0.999998	valid_1's auc: 0.977533
+[3500]	training's auc: 1	valid_1's auc: 0.977952
+[4000]	training's auc: 1	valid_1's auc: 0.978162
+Early stopping, best iteration is:
+[4111]	training's auc: 1	valid_1's auc: 0.978173
+	 AUC =  0.9781737043152363
+Fold 1 finished in 0:47:20.293255
+
+Fold2
+train records: 472432
+valid records: 118108
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.974166	valid_1's auc: 0.950504
+[1000]	training's auc: 0.993788	valid_1's auc: 0.968032
+[1500]	training's auc: 0.998729	valid_1's auc: 0.973313
+[2000]	training's auc: 0.999784	valid_1's auc: 0.975797
+[2500]	training's auc: 0.999971	valid_1's auc: 0.97698
+[3000]	training's auc: 0.999997	valid_1's auc: 0.977796
+[3500]	training's auc: 1	valid_1's auc: 0.978314
+[4000]	training's auc: 1	valid_1's auc: 0.978484
+Early stopping, best iteration is:
+[4260]	training's auc: 1	valid_1's auc: 0.978568
+	 AUC =  0.978574331561292
+Fold 2 finished in 0:48:18.895950
+
+Fold3
+train records: 472432
+valid records: 118108
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.974609	valid_1's auc: 0.951175
+[1000]	training's auc: 0.993998	valid_1's auc: 0.967711
+[1500]	training's auc: 0.998745	valid_1's auc: 0.972751
+[2000]	training's auc: 0.999784	valid_1's auc: 0.97495
+[2500]	training's auc: 0.99997	valid_1's auc: 0.976002
+[3000]	training's auc: 0.999997	valid_1's auc: 0.976685
+[3500]	training's auc: 1	valid_1's auc: 0.976968
+[4000]	training's auc: 1	valid_1's auc: 0.977213
+Early stopping, best iteration is:
+[4196]	training's auc: 1	valid_1's auc: 0.977267
+	 AUC =  0.9773090614275547
+Fold 3 finished in 1:02:23.637445
+
+Fold4
+train records: 472432
+valid records: 118108
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.974616	valid_1's auc: 0.949179
+[1000]	training's auc: 0.993931	valid_1's auc: 0.965761
+[1500]	training's auc: 0.998757	valid_1's auc: 0.970992
+[2000]	training's auc: 0.999784	valid_1's auc: 0.973289
+[2500]	training's auc: 0.99997	valid_1's auc: 0.974459
+[3000]	training's auc: 0.999997	valid_1's auc: 0.975034
+[3500]	training's auc: 1	valid_1's auc: 0.97547
+[4000]	training's auc: 1	valid_1's auc: 0.975666
+Early stopping, best iteration is:
+[4216]	training's auc: 1	valid_1's auc: 0.975739
+	 AUC =  0.9757322052507934
+Fold 4 finished in 1:37:57.821720
+
+Fold5
+train records: 472432
+valid records: 118108
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.974667	valid_1's auc: 0.946323
+[1000]	training's auc: 0.99379	valid_1's auc: 0.963613
+[1500]	training's auc: 0.998716	valid_1's auc: 0.969196
+[2000]	training's auc: 0.999783	valid_1's auc: 0.971546
+[2500]	training's auc: 0.999972	valid_1's auc: 0.972791
+[3000]	training's auc: 0.999998	valid_1's auc: 0.973508
+[3500]	training's auc: 1	valid_1's auc: 0.973974
+[4000]	training's auc: 1	valid_1's auc: 0.974183
+Early stopping, best iteration is:
+[4002]	training's auc: 1	valid_1's auc: 0.974187
+	 AUC =  0.9741848266049243
+Fold 5 finished in 1:32:28.398620
+
+Mean AUC: 0.976794826, std: 0.001629334, All_AUC: 0.976807388
+
+#==============================================================================
+# SUCCESS !!! 932_from923_KFold.py
+#==============================================================================
+
+time: 350.16min

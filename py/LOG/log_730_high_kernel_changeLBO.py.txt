@@ -1,0 +1,66 @@
+
+#==============================================================================
+# START!!! 730_high_kernel_changeLBO.py    PID: 48527    time: 2019-09-29 12:18:36.197670
+#==============================================================================
+
+Fold1
+train records: 400971
+valid records: 89326
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.9865	valid_1's auc: 0.926851
+[1000]	training's auc: 0.998341	valid_1's auc: 0.930872
+Early stopping, best iteration is:
+[974]	training's auc: 0.998155	valid_1's auc: 0.930963
+	 AUC =  0.9309625782163972
+Fold 1 finished in 0:04:48.270866
+
+Fold2
+train records: 400971
+valid records: 89326
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.986545	valid_1's auc: 0.927972
+Early stopping, best iteration is:
+[854]	training's auc: 0.996911	valid_1's auc: 0.93298
+	 AUC =  0.9329799759348144
+Fold 2 finished in 0:04:28.164287
+
+Fold3
+train records: 400971
+valid records: 89326
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.986075	valid_1's auc: 0.929512
+[1000]	training's auc: 0.998222	valid_1's auc: 0.934417
+Early stopping, best iteration is:
+[1108]	training's auc: 0.998916	valid_1's auc: 0.934669
+	 AUC =  0.9346694378968294
+Fold 3 finished in 0:05:52.946663
+
+Fold4
+train records: 400971
+valid records: 89326
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.986091	valid_1's auc: 0.927677
+[1000]	training's auc: 0.998287	valid_1's auc: 0.932844
+Early stopping, best iteration is:
+[1023]	training's auc: 0.998436	valid_1's auc: 0.933015
+	 AUC =  0.9330150346172081
+Fold 4 finished in 0:05:09.090720
+
+Fold5
+train records: 400972
+valid records: 89326
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.986308	valid_1's auc: 0.92907
+[1000]	training's auc: 0.998338	valid_1's auc: 0.932227
+Early stopping, best iteration is:
+[986]	training's auc: 0.998228	valid_1's auc: 0.932322
+	 AUC =  0.9323223090241228
+Fold 5 finished in 0:04:53.265204
+
+Mean AUC: 0.932789867, std: 0.001198100, All_AUC: 0.949911795
+
+#==============================================================================
+# SUCCESS !!! 730_high_kernel_changeLBO.py
+#==============================================================================
+
+time: 25.37min

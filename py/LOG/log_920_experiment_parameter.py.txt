@@ -1,0 +1,37 @@
+
+#==============================================================================
+# START!!! 920_experiment_parameter.py    PID: 42755    time: 2019-09-28 11:36:39.523677
+#==============================================================================
+
+Shape control: (590540, 791) (506691, 791)
+Mem. usage decreased to 1278.41 Mb (41.3% reduction)
+Mem. usage decreased to 1104.71 Mb (41.1% reduction)
+Fold1
+train records: 295270
+valid records: 295270
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.980891	valid_1's auc: 0.947879
+[1000]	training's auc: 0.997591	valid_1's auc: 0.962895
+[1500]	training's auc: 0.999801	valid_1's auc: 0.967062
+Did not meet early stopping. Best iteration is:
+[1800]	training's auc: 0.999963	valid_1's auc: 0.96812
+	 AUC =  0.9681153260831731
+Fold 1 finished in 0:16:24.913729
+Fold2
+train records: 295270
+valid records: 295270
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.9813	valid_1's auc: 0.943829
+[1000]	training's auc: 0.997511	valid_1's auc: 0.959641
+[1500]	training's auc: 0.999778	valid_1's auc: 0.964107
+Did not meet early stopping. Best iteration is:
+[1800]	training's auc: 0.999959	valid_1's auc: 0.965274
+	 AUC =  0.9652857125667543
+Fold 2 finished in 0:16:09.066129
+Mean AUC: 0.966700519, std: 0.001414807, All_AUC: 0.966705693
+
+#==============================================================================
+# SUCCESS !!! 920_experiment_parameter.py
+#==============================================================================
+
+time: 35.44min

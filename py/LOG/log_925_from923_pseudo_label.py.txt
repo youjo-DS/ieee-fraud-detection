@@ -1,0 +1,61 @@
+
+#==============================================================================
+# START!!! 925_from923_pseudo_label.py    PID: 49074    time: 2019-09-29 13:14:24.770429
+#==============================================================================
+
+Shape control: (590540, 792) (506691, 792)
+Mem. usage decreased to 1954.23 Mb (11.7% reduction)
+Mem. usage decreased to 1674.91 Mb (12.2% reduction)
+Fold1
+train records: 400971
+valid records: 89326
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.991438	valid_1's auc: 0.929259
+Early stopping, best iteration is:
+[525]	training's auc: 0.992053	valid_1's auc: 0.929378
+	 AUC =  0.9293608784320148
+Fold 1 finished in 0:04:56.370466
+
+Fold2
+train records: 400971
+valid records: 89326
+Training until validation scores don't improve for 100 rounds.
+Early stopping, best iteration is:
+[3]	training's auc: 0.982855	valid_1's auc: 0.910242
+	 AUC =  0.9102422655525486
+Fold 2 finished in 0:01:01.193613
+
+Fold3
+train records: 400971
+valid records: 89326
+Training until validation scores don't improve for 100 rounds.
+Early stopping, best iteration is:
+[3]	training's auc: 0.982374	valid_1's auc: 0.896644
+	 AUC =  0.8966444210908624
+Fold 3 finished in 0:01:00.829983
+
+Fold4
+train records: 400971
+valid records: 89326
+Training until validation scores don't improve for 100 rounds.
+Early stopping, best iteration is:
+[3]	training's auc: 0.981726	valid_1's auc: 0.888778
+	 AUC =  0.888777520208954
+Fold 4 finished in 0:01:00.808863
+
+Fold5
+train records: 400972
+valid records: 89326
+Training until validation scores don't improve for 100 rounds.
+Early stopping, best iteration is:
+[3]	training's auc: 0.982955	valid_1's auc: 0.908579
+	 AUC =  0.9085910973415268
+Fold 5 finished in 0:01:00.040159
+
+Mean AUC: 0.906723237, std: 0.013798308, All_AUC: 0.850623782
+
+#==============================================================================
+# SUCCESS !!! 925_from923_pseudo_label.py
+#==============================================================================
+
+time: 10.56min

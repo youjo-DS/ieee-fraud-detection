@@ -1,0 +1,83 @@
+
+#==============================================================================
+# START!!! 934_from931_not_remove_uid.py    PID: 58512    time: 2019-10-01 08:09:20.429451
+#==============================================================================
+
+Shape control: (590540, 791) (506691, 791)
+Mem. usage decreased to 2024.07 Mb (13.4% reduction)
+Mem. usage decreased to 1727.10 Mb (14.2% reduction)
+Fold1
+train records: 400971
+valid records: 89326
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.992697	valid_1's auc: 0.911847
+[1000]	training's auc: 0.998882	valid_1's auc: 0.914853
+[1500]	training's auc: 0.999886	valid_1's auc: 0.91629
+[2000]	training's auc: 0.999994	valid_1's auc: 0.918333
+[2500]	training's auc: 1	valid_1's auc: 0.920103
+[3000]	training's auc: 1	valid_1's auc: 0.921596
+[3500]	training's auc: 1	valid_1's auc: 0.922558
+Early stopping, best iteration is:
+[3476]	training's auc: 1	valid_1's auc: 0.922551
+	 AUC =  0.9225758276985403
+Fold 1 finished in 0:46:38.355003
+
+Fold2
+train records: 400971
+valid records: 89326
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.992575	valid_1's auc: 0.914818
+Early stopping, best iteration is:
+[801]	training's auc: 0.997509	valid_1's auc: 0.917262
+	 AUC =  0.9172905897817991
+Fold 2 finished in 0:09:32.397589
+
+Fold3
+train records: 400971
+valid records: 89326
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.992246	valid_1's auc: 0.915655
+Early stopping, best iteration is:
+[786]	training's auc: 0.997202	valid_1's auc: 0.917733
+	 AUC =  0.9178008701705027
+Fold 3 finished in 0:09:15.140624
+
+Fold4
+train records: 400971
+valid records: 89326
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.992439	valid_1's auc: 0.914336
+[1000]	training's auc: 0.998829	valid_1's auc: 0.916951
+[1500]	training's auc: 0.999879	valid_1's auc: 0.918508
+[2000]	training's auc: 0.999993	valid_1's auc: 0.920178
+[2500]	training's auc: 1	valid_1's auc: 0.92163
+[3000]	training's auc: 1	valid_1's auc: 0.922886
+[3500]	training's auc: 1	valid_1's auc: 0.923752
+Early stopping, best iteration is:
+[3470]	training's auc: 1	valid_1's auc: 0.923717
+	 AUC =  0.9238004045292181
+Fold 4 finished in 0:45:27.587254
+
+Fold5
+train records: 400972
+valid records: 89326
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.992673	valid_1's auc: 0.913681
+[1000]	training's auc: 0.998849	valid_1's auc: 0.915808
+[1500]	training's auc: 0.99988	valid_1's auc: 0.917735
+[2000]	training's auc: 0.999992	valid_1's auc: 0.919682
+[2500]	training's auc: 1	valid_1's auc: 0.92169
+[3000]	training's auc: 1	valid_1's auc: 0.923141
+[3500]	training's auc: 1	valid_1's auc: 0.924067
+Early stopping, best iteration is:
+[3512]	training's auc: 1	valid_1's auc: 0.924079
+	 AUC =  0.9240886739119688
+Fold 5 finished in 0:46:07.825836
+
+Mean AUC: 0.921111273, std: 0.002959650, All_AUC: 0.944143899
+
+#==============================================================================
+# SUCCESS !!! 934_from931_not_remove_uid.py
+#==============================================================================
+
+time: 158.69min

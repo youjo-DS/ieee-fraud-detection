@@ -95,3 +95,52 @@ def reduce_mem_usage(df, verbose=True):
     end_mem = df.memory_usage().sum() / 1024**2
     if verbose: print('Mem. usage decreased to {:5.2f} Mb ({:.1f}% reduction)'.format(end_mem, 100 * (start_mem - end_mem) / start_mem))
     return df
+
+def save_importances(importances):
+    if len(importances['feaure'].nunique()) > 300:
+        order = importances.agg({'gain': 'mean'}).sort_values('gain', ascending=False).head(300).index
+        plt.figure(figsize=(16, len(order) / 3))
+        sns.barplot(x='gain',
+                    y='feature',
+                    data=importances[importances['feature'].isin(order)].sort_values('gain', ascending=False))
+        plt.savefig(f'LOG/imp/PNG/imp_{__file__}.png', dpi=200, bbox_inches="tight", pad_inches=0.1)
+    else:
+        plt.figure(figsize=(16, int(len(importances) / 3)))
+        sns.barplot(x='gain', y='feature', data=importances.sort_values('gain', ascending=False))
+        plt.savefig(f'LOG/imp/PNG/imp_{__file__}.png', dpi=200, bbox_inches="tight", pad_inches=0.1)
+        
+    return
+
+# =============================================================================
+# load feature
+# =============================================================================
+def load_feature(train, test, USE_FEATURE, FEATURE_DIR='../feature/'):
+    len_tr = len(train)
+    len_te = len(test)
+
+    if isinstance(USE_FEATURE, str):
+        USE_FEATURE = [USE_FEATURE]
+
+    if len(USE_FEATURE) > 0:
+        tr_files = []
+        te_files = []
+        for f in USE_FEATURE:
+            tr_file   = glob(f'../feature/{f}*__train__*.ftr')
+            tr_files += tr_file
+
+            te_file   = glob(f'../feature/{f}*__test__*.ftr')
+            te_files += te_file
+    else:
+        tr_feature_path = '../feature/*__train__*.ftr'
+        te_feature_path = '../feature/*__test__*.ftr'
+
+        tr_files = sorted(glob(tr_feature_path))
+        te_files = sorted(glob(te_feature_path))
+
+    train = pd.concat([train, *[feather.read_dataframe(f) for f in tr_files]], axis=1)
+    test  = pd.concat([test, *[feather.read_dataframe(f) for f in te_files]], axis=1)
+
+    assert len(train) == len_tr
+    assert len(test) == len_te
+
+    return train, test

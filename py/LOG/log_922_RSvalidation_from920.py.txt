@@ -1,0 +1,40 @@
+
+#==============================================================================
+# START!!! 922_RSvalidation_from920.py    PID: 44017    time: 2019-09-28 14:53:54.923919
+#==============================================================================
+
+Shape control: (590540, 791) (506691, 791)
+Mem. usage decreased to 1933.96 Mb (11.2% reduction)
+Mem. usage decreased to 1659.45 Mb (11.6% reduction)
+Fold1
+train records: 393694
+valid records: 98423
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.979776	valid_1's auc: 0.927996
+[1000]	training's auc: 0.996596	valid_1's auc: 0.939408
+[1500]	training's auc: 0.999576	valid_1's auc: 0.941114
+Early stopping, best iteration is:
+[1607]	training's auc: 0.99974	valid_1's auc: 0.941235
+	 AUC =  0.9412390154607475
+Fold 1 finished in 0:16:31.373444
+
+Fold2
+train records: 492117
+valid records: 98423
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.97525	valid_1's auc: 0.924294
+[1000]	training's auc: 0.99405	valid_1's auc: 0.936963
+[1500]	training's auc: 0.998771	valid_1's auc: 0.940243
+[2000]	training's auc: 0.999793	valid_1's auc: 0.941074
+Early stopping, best iteration is:
+[2070]	training's auc: 0.999841	valid_1's auc: 0.941136
+	 AUC =  0.9411425976588929
+Fold 2 finished in 0:23:54.369503
+
+Mean AUC: 0.941190807, std: 0.000048209, All_AUC: 0.555256356
+
+#==============================================================================
+# SUCCESS !!! 922_RSvalidation_from920.py
+#==============================================================================
+
+time: 43.78min

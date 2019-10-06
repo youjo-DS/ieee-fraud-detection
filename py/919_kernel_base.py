@@ -32,9 +32,37 @@ utils.start(__file__)
 # =============================================================================
 NLOOP = 300  # 100000
 NROUND = 1800
-NFOLD = 8
+NFOLD = 5  # changed 8 -> 5
 SEED  = 42
 ETA   = 0.005
+
+def reduce_mem_usage(df, verbose=True):
+    numerics = ['int16', 'int32', 'int64', 'float16', 'float32', 'float64']
+    start_mem = df.memory_usage().sum() / 1024**2    
+    for col in df.columns:
+        col_type = df[col].dtypes
+        if col_type in numerics:
+            c_min = df[col].min()
+            c_max = df[col].max()
+            if str(col_type)[:3] == 'int':
+                if c_min > np.iinfo(np.int8).min and c_max < np.iinfo(np.int8).max:
+                    df[col] = df[col].astype(np.int8)
+                elif c_min > np.iinfo(np.int16).min and c_max < np.iinfo(np.int16).max:
+                    df[col] = df[col].astype(np.int16)
+                elif c_min > np.iinfo(np.int32).min and c_max < np.iinfo(np.int32).max:
+                    df[col] = df[col].astype(np.int32)
+                elif c_min > np.iinfo(np.int64).min and c_max < np.iinfo(np.int64).max:
+                    df[col] = df[col].astype(np.int64)  
+            else:
+                if c_min > np.finfo(np.float16).min and c_max < np.finfo(np.float16).max:
+                    df[col] = df[col].astype(np.float16)
+                elif c_min > np.finfo(np.float32).min and c_max < np.finfo(np.float32).max:
+                    df[col] = df[col].astype(np.float32)
+                else:
+                    df[col] = df[col].astype(np.float64)    
+    end_mem = df.memory_usage().sum() / 1024**2
+    if verbose: print('Mem. usage decreased to {:5.2f} Mb ({:.1f}% reduction)'.format(end_mem, 100 * (start_mem - end_mem) / start_mem))
+    return df
 
 # =============================================================================
 # load data
@@ -47,9 +75,12 @@ remove_features = pd.read_pickle(DIR + 'remove_features.pkl')
 remove_features = list(remove_features['features_to_remove'].values)
 print('Shape control:', train.shape, test.shape)
 
-type_dict = dict(zip(train.columns, [str(i) for i in train.dtypes]))
-for k, v in type_dict:
-    test[k] = test[k].astype(v)
+train = reduce_mem_usage(train)
+tset  = reduce_mem_usage(test)
+
+# type_dict = dict(zip(train.columns, [str(i) for i in train.dtypes]))
+# for k, v in type_dict.items():
+#     test[k] = test[k].astype(v)
 
 features_columns = [col for col in list(train) if col not in remove_features]
 
@@ -166,7 +197,7 @@ for i in range(NFOLD):
 
     val_preds = model.predict(val_x, num_iteration=model.best_iteration)
     oof_preds[val_idx_list[i]] = val_preds
-    test_preds += model.predict(test) / NFOLD
+    test_preds += model.predict(X_test) / NFOLD
 
     val_score = roc_auc_score(val_y, val_preds)
     val_aucs.append(val_score)
@@ -193,7 +224,8 @@ print(f'Mean AUC: {mean_auc:.9f}, std: {std_auc:.9f}, All_AUC: {all_auc:.9f}')
 # =============================================================================
 importances.to_csv(f'LOG/imp/csv/imp_{__file__}.csv', index=False)
 
-importances = importances.groupby('feature', as_index=False).agg({'gain': 'mean'}).head(300)
+importances = importances.groupby('feature', as_index=False).agg({'gain': 'mean'})\
+                         .sort_values('gain', ascending=False).head(300)
 plt.figure(figsize=(16, int(len(importances) / 3)))
 sns.barplot(x='gain', y='feature', data=importances.sort_values('gain', ascending=False))
 plt.savefig(f'LOG/imp/PNG/imp_{__file__}.png', dpi=200, bbox_inches="tight", pad_inches=0.1)

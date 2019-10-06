@@ -1,0 +1,77 @@
+
+#==============================================================================
+# START!!! 921_LBOvalidation_from919.py    PID: 43427    time: 2019-09-28 13:14:19.763728
+#==============================================================================
+
+Shape control: (590540, 791) (506691, 791)
+Mem. usage decreased to 1933.96 Mb (11.2% reduction)
+Mem. usage decreased to 1659.45 Mb (11.6% reduction)
+Fold1
+train records: 400971
+valid records: 89326
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.978213	valid_1's auc: 0.922197
+[1000]	training's auc: 0.995764	valid_1's auc: 0.935374
+[1500]	training's auc: 0.999415	valid_1's auc: 0.938368
+Early stopping, best iteration is:
+[1723]	training's auc: 0.999776	valid_1's auc: 0.938711
+	 AUC =  0.9387311829264305
+Fold 1 finished in 0:18:19.332315
+
+Fold2
+train records: 400971
+valid records: 89326
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.977641	valid_1's auc: 0.923871
+[1000]	training's auc: 0.99583	valid_1's auc: 0.936603
+[1500]	training's auc: 0.999384	valid_1's auc: 0.939691
+Early stopping, best iteration is:
+[1699]	training's auc: 0.999734	valid_1's auc: 0.940224
+	 AUC =  0.9402330630581582
+Fold 2 finished in 0:18:00.240044
+
+Fold3
+train records: 400971
+valid records: 89326
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.977445	valid_1's auc: 0.924494
+[1000]	training's auc: 0.99554	valid_1's auc: 0.937612
+[1500]	training's auc: 0.999338	valid_1's auc: 0.940864
+[2000]	training's auc: 0.999927	valid_1's auc: 0.941675
+Early stopping, best iteration is:
+[2118]	training's auc: 0.999958	valid_1's auc: 0.941798
+	 AUC =  0.9418098395909581
+Fold 3 finished in 0:22:26.188339
+
+Fold4
+train records: 400971
+valid records: 89326
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.97754	valid_1's auc: 0.923673
+[1000]	training's auc: 0.995671	valid_1's auc: 0.936191
+[1500]	training's auc: 0.999357	valid_1's auc: 0.939039
+Early stopping, best iteration is:
+[1582]	training's auc: 0.999543	valid_1's auc: 0.939341
+	 AUC =  0.9393693016045255
+Fold 4 finished in 0:16:48.091076
+
+Fold5
+train records: 400972
+valid records: 89326
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.977787	valid_1's auc: 0.92366
+[1000]	training's auc: 0.995656	valid_1's auc: 0.936619
+[1500]	training's auc: 0.999363	valid_1's auc: 0.939266
+[2000]	training's auc: 0.99993	valid_1's auc: 0.939713
+Early stopping, best iteration is:
+[1921]	training's auc: 0.999899	valid_1's auc: 0.939749
+	 AUC =  0.9397615811432979
+Fold 5 finished in 0:19:28.391271
+
+Mean AUC: 0.939980994, std: 0.001038514, All_AUC: 0.956843593
+
+#==============================================================================
+# SUCCESS !!! 921_LBOvalidation_from919.py
+#==============================================================================
+
+time: 97.93min

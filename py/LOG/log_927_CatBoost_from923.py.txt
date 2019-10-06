@@ -1,0 +1,22 @@
+
+#==============================================================================
+# START!!! 927_CatBoost_from923.py    PID: 52223    time: 2019-09-29 19:58:22.010886
+#==============================================================================
+
+Shape control: (590540, 791) (506691, 791)
+Mem. usage decreased to 1951.98 Mb (11.7% reduction)
+Mem. usage decreased to 1672.98 Mb (12.1% reduction)
+Fold1
+train records: 400971
+valid records: 89326
+0:	test: 0.7443329	best: 0.7443329 (0)	total: 664ms	remaining: 1d 12h 52m 23s
+500:	test: 0.8657315	best: 0.8657315 (500)	total: 5m 3s	remaining: 1d 9h 35m 55s
+1000:	test: 0.8779382	best: 0.8779382 (1000)	total: 9m 41s	remaining: 1d 8h 6m 40s
+1500:	test: 0.8844106	best: 0.8844106 (1500)	total: 14m 21s	remaining: 1d 7h 38m 16s
+2000:	test: 0.8886754	best: 0.8886754 (2000)	total: 19m 5s	remaining: 1d 7h 28m 33s
+2500:	test: 0.8924425	best: 0.8924425 (2500)	total: 23m 34s	remaining: 1d 7h 1m 6s
+3000:	test: 0.8956257	best: 0.8956257 (3000)	total: 28m 8s	remaining: 1d 6h 47m 32s
+3500:	test: 0.8979794	best: 0.8979794 (3500)	total: 32m 49s	remaining: 1d 6h 42m 10s
+4000:	test: 0.9001965	best: 0.9001965 (4000)	total: 37m 28s	remaining: 1d 6h 35m 48s
+4500:	test: 0.9020331	best: 0.9020331 (4500)	total: 42m 3s	remaining: 1d 6h 27m 5s
+5000:	test: 0.9034793	best: 0.9034900 (4999)	total: 46m 32s	remaining: 1d 6h 14m 50s

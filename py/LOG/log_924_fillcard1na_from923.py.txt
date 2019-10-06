@@ -1,0 +1,25 @@
+
+#==============================================================================
+# START!!! 924_fillcard1na_from923.py    PID: 47799    time: 2019-09-29 10:40:34.496409
+#==============================================================================
+
+Shape control: (590540, 791) (506691, 791)
+Mem. usage decreased to 1951.98 Mb (11.7% reduction)
+Mem. usage decreased to 1672.98 Mb (12.1% reduction)
+Fold1
+train records: 400971
+valid records: 89326
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.978476	valid_1's auc: 0.922271
+[1000]	training's auc: 0.995814	valid_1's auc: 0.935487
+[1500]	training's auc: 0.999439	valid_1's auc: 0.93815
+[2000]	training's auc: 0.999941	valid_1's auc: 0.938961
+Early stopping, best iteration is:
+[2160]	training's auc: 0.999974	valid_1's auc: 0.939046
+	 AUC =  0.9390939501468217
+Fold 1 finished in 0:24:36.316686
+
+Fold2
+train records: 400971
+valid records: 89326
+Training until validation scores don't improve for 100 rounds.

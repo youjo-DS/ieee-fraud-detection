@@ -1,0 +1,71 @@
+
+#==============================================================================
+# START!!! 723_splitting_preditction.py    PID: 46671    time: 2019-09-28 23:39:15.783123
+#==============================================================================
+
+Shape control: (590540, 791) (506691, 791)
+Mem. usage decreased to 1951.98 Mb (11.7% reduction)
+Mem. usage decreased to 1672.98 Mb (12.1% reduction)
+Fold1
+train records: 400971
+valid records: 89326
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.995729	valid_1's auc: 0.934469
+[1000]	training's auc: 0.999926	valid_1's auc: 0.937861
+Early stopping, best iteration is:
+[1124]	training's auc: 0.999976	valid_1's auc: 0.938132
+	 AUC =  0.9381630512419074
+Fold 1 finished in 0:11:42.531936
+
+Fold2
+train records: 400971
+valid records: 89326
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.995692	valid_1's auc: 0.935446
+[1000]	training's auc: 0.99993	valid_1's auc: 0.940618
+Early stopping, best iteration is:
+[1106]	training's auc: 0.999974	valid_1's auc: 0.940892
+	 AUC =  0.9408789518607191
+Fold 2 finished in 0:10:58.900389
+
+Fold3
+train records: 400971
+valid records: 89326
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.995498	valid_1's auc: 0.936537
+[1000]	training's auc: 0.99993	valid_1's auc: 0.94096
+Early stopping, best iteration is:
+[986]	training's auc: 0.99992	valid_1's auc: 0.940999
+	 AUC =  0.9410535636174732
+Fold 3 finished in 0:09:52.896913
+
+Fold4
+train records: 400971
+valid records: 89326
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.995573	valid_1's auc: 0.935667
+[1000]	training's auc: 0.999925	valid_1's auc: 0.938989
+Early stopping, best iteration is:
+[1319]	training's auc: 0.999997	valid_1's auc: 0.939281
+	 AUC =  0.9393170413714207
+Fold 4 finished in 0:13:02.447133
+
+Fold5
+train records: 400972
+valid records: 89326
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.995659	valid_1's auc: 0.936167
+Early stopping, best iteration is:
+[774]	training's auc: 0.999478	valid_1's auc: 0.93899
+	 AUC =  0.9389562781428619
+Fold 5 finished in 0:07:54.042198
+
+Mean AUC: 0.939673777, std: 0.001120769, All_AUC: 0.960726295
+test predict start!!!!!
+test predict finished in 0:02:49.622612
+
+#==============================================================================
+# SUCCESS !!! 723_splitting_preditction.py
+#==============================================================================
+
+time: 57.69min

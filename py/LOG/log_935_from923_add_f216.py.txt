@@ -1,0 +1,77 @@
+
+#==============================================================================
+# START!!! 935_from923_add_f216.py    PID: 63477    time: 2019-10-03 00:26:36.586204
+#==============================================================================
+
+Shape control: (590540, 791) (506691, 791)
+Mem. usage decreased to 1986.90 Mb (12.4% reduction)
+Mem. usage decreased to 1736.76 Mb (11.1% reduction)
+Fold1
+train records: 400971
+valid records: 89326
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.978349	valid_1's auc: 0.923218
+[1000]	training's auc: 0.995818	valid_1's auc: 0.936684
+[1500]	training's auc: 0.999417	valid_1's auc: 0.939394
+Early stopping, best iteration is:
+[1743]	training's auc: 0.999797	valid_1's auc: 0.93985
+	 AUC =  0.9398846701955397
+Fold 1 finished in 0:18:12.287434
+
+Fold2
+train records: 400971
+valid records: 89326
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.97791	valid_1's auc: 0.923734
+[1000]	training's auc: 0.995811	valid_1's auc: 0.93735
+[1500]	training's auc: 0.999391	valid_1's auc: 0.94047
+[2000]	training's auc: 0.999932	valid_1's auc: 0.940881
+Early stopping, best iteration is:
+[2257]	training's auc: 0.999981	valid_1's auc: 0.941154
+	 AUC =  0.9411633510808041
+Fold 2 finished in 0:22:58.967864
+
+Fold3
+train records: 400971
+valid records: 89326
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.977193	valid_1's auc: 0.924994
+[1000]	training's auc: 0.995545	valid_1's auc: 0.937982
+[1500]	training's auc: 0.999346	valid_1's auc: 0.941417
+Early stopping, best iteration is:
+[1749]	training's auc: 0.999774	valid_1's auc: 0.942112
+	 AUC =  0.9421287015107356
+Fold 3 finished in 0:17:47.899258
+
+Fold4
+train records: 400971
+valid records: 89326
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.977566	valid_1's auc: 0.923706
+[1000]	training's auc: 0.995664	valid_1's auc: 0.93631
+[1500]	training's auc: 0.999347	valid_1's auc: 0.939014
+[2000]	training's auc: 0.999927	valid_1's auc: 0.939653
+Early stopping, best iteration is:
+[2133]	training's auc: 0.999961	valid_1's auc: 0.939837
+	 AUC =  0.9398766132543991
+Fold 4 finished in 0:21:45.950979
+
+Fold5
+train records: 400972
+valid records: 89326
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.977721	valid_1's auc: 0.923771
+[1000]	training's auc: 0.995692	valid_1's auc: 0.936973
+[1500]	training's auc: 0.999363	valid_1's auc: 0.939936
+Early stopping, best iteration is:
+[1700]	training's auc: 0.999726	valid_1's auc: 0.940189
+	 AUC =  0.9402019192371326
+Fold 5 finished in 0:17:12.672506
+
+Mean AUC: 0.940651051, std: 0.000875753, All_AUC: 0.958611036
+
+#==============================================================================
+# SUCCESS !!! 935_from923_add_f216.py
+#==============================================================================
+
+time: 99.36min

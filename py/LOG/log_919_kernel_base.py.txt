@@ -1,15 +1,103 @@
 
 #==============================================================================
-# START!!! 919_kernel_base.py    PID: 38144    time: 2019-09-26 22:03:40.825608
+# START!!! 919_kernel_base.py    PID: 41121    time: 2019-09-27 21:52:32.195817
 #==============================================================================
 
 Shape control: (590540, 791) (506691, 791)
+Mem. usage decreased to 1278.41 Mb (41.3% reduction)
+Mem. usage decreased to 1104.71 Mb (41.1% reduction)
 Fold1
 train records: 516722
 valid records: 73818
 Training until validation scores don't improve for 100 rounds.
-[500]	training's auc: 0.973022	valid_1's auc: 0.953352
-[1000]	training's auc: 0.992893	valid_1's auc: 0.969796
-[1500]	training's auc: 0.998316	valid_1's auc: 0.9747
+[500]	training's auc: 0.972897	valid_1's auc: 0.953342
+[1000]	training's auc: 0.992871	valid_1's auc: 0.96981
+[1500]	training's auc: 0.998314	valid_1's auc: 0.974831
 Did not meet early stopping. Best iteration is:
-[1800]	training's auc: 0.999346	valid_1's auc: 0.97621
+[1800]	training's auc: 0.999351	valid_1's auc: 0.97621
+	 AUC =  0.9761987513335256
+Fold 1 finished in 0:20:14.154650
+Fold2
+train records: 516722
+valid records: 73818
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.972782	valid_1's auc: 0.953948
+[1000]	training's auc: 0.992829	valid_1's auc: 0.970571
+[1500]	training's auc: 0.998283	valid_1's auc: 0.976114
+Did not meet early stopping. Best iteration is:
+[1800]	training's auc: 0.99933	valid_1's auc: 0.977783
+	 AUC =  0.9777780157086868
+Fold 2 finished in 0:19:53.550199
+Fold3
+train records: 516722
+valid records: 73818
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.972894	valid_1's auc: 0.950994
+[1000]	training's auc: 0.992919	valid_1's auc: 0.968507
+[1500]	training's auc: 0.998326	valid_1's auc: 0.973613
+Did not meet early stopping. Best iteration is:
+[1800]	training's auc: 0.999338	valid_1's auc: 0.975222
+	 AUC =  0.9752073927276279
+Fold 3 finished in 0:19:50.895124
+Fold4
+train records: 516722
+valid records: 73818
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.973291	valid_1's auc: 0.952409
+[1000]	training's auc: 0.993043	valid_1's auc: 0.96834
+[1500]	training's auc: 0.998355	valid_1's auc: 0.973337
+Did not meet early stopping. Best iteration is:
+[1800]	training's auc: 0.999344	valid_1's auc: 0.974808
+	 AUC =  0.9748072568143337
+Fold 4 finished in 0:19:57.417527
+Fold5
+train records: 516723
+valid records: 73817
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.97302	valid_1's auc: 0.950451
+[1000]	training's auc: 0.992946	valid_1's auc: 0.967765
+[1500]	training's auc: 0.998278	valid_1's auc: 0.973304
+Did not meet early stopping. Best iteration is:
+[1800]	training's auc: 0.999312	valid_1's auc: 0.975165
+	 AUC =  0.9751721768112518
+Fold 5 finished in 0:19:57.777630
+Fold6
+train records: 516723
+valid records: 73817
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.973302	valid_1's auc: 0.950417
+[1000]	training's auc: 0.992997	valid_1's auc: 0.967611
+[1500]	training's auc: 0.998346	valid_1's auc: 0.972946
+Did not meet early stopping. Best iteration is:
+[1800]	training's auc: 0.999343	valid_1's auc: 0.974605
+	 AUC =  0.974596018516827
+Fold 6 finished in 0:20:34.855392
+Fold7
+train records: 516723
+valid records: 73817
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.973174	valid_1's auc: 0.949466
+[1000]	training's auc: 0.992909	valid_1's auc: 0.966482
+[1500]	training's auc: 0.998299	valid_1's auc: 0.972017
+Did not meet early stopping. Best iteration is:
+[1800]	training's auc: 0.999318	valid_1's auc: 0.973566
+	 AUC =  0.9735593284421268
+Fold 7 finished in 0:19:55.155006
+Fold8
+train records: 516723
+valid records: 73817
+Training until validation scores don't improve for 100 rounds.
+[500]	training's auc: 0.973087	valid_1's auc: 0.946301
+[1000]	training's auc: 0.992837	valid_1's auc: 0.965326
+[1500]	training's auc: 0.998278	valid_1's auc: 0.97101
+Did not meet early stopping. Best iteration is:
+[1800]	training's auc: 0.999314	valid_1's auc: 0.972733
+	 AUC =  0.9727349891499362
+Fold 8 finished in 0:19:56.240949
+Mean AUC: 0.975006741, std: 0.001441910, All_AUC: 0.975019713
+
+#==============================================================================
+# SUCCESS !!! 919_kernel_base.py
+#==============================================================================
+
+time: 162.73min
